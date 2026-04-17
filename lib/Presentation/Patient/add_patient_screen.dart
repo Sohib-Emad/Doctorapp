@@ -1,3 +1,4 @@
+import 'package:adixion/Core/helper/image_assets.dart';
 import 'package:adixion/Presentation/Patient/add_patient_screen_vitls.dart';
 import 'package:adixion/Presentation/Patient/widgets/custom_button.dart';
 import 'package:adixion/Presentation/Patient/widgets/custom_gender_selection.dart';
@@ -25,7 +26,6 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _dobController = TextEditingController();
 
-  static const String backgroundImagePath = 'assets/images/Patient/bg.png';
 
   @override
   void dispose() {
@@ -46,7 +46,7 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
         child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage(backgroundImagePath),
+              image: AssetImage(ImageAssets.backgroundImagePath),
               fit: BoxFit.cover,
             ),
           ),
@@ -72,7 +72,7 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const CustomSectionTitle(
-              icon: 'assets/Icons/Patient/person.png',
+              icon: ImageAssets.personInformation,
               title: 'Personal Information',
               widthIcon: 14.14,
               heightIcon: 18,
@@ -85,7 +85,7 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
                   child: CustomFormField(
                     label: "First Name",
                     hint: "Rishabh",
-                    icon: 'assets/Icons/Patient/name.png',
+                    icon: ImageAssets.name,
                     widthIcon: 16,
                     heightIcon: 16,
                     textColor: Color(0xFF888A8E),
@@ -113,7 +113,7 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
             CustomFormField(
               label: "Phone Number",
               hint: "+91 98765 43210",
-              icon: 'assets/Icons/Patient/phone.png',
+              icon: ImageAssets.phone,
               heightIcon: 16,
               widthIcon: 16,
               textColor: Color(0xFF888A8E),
@@ -127,7 +127,7 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
             CustomFormField(
               label: "Email Address",
               hint: "patient@email.com",
-              icon: 'assets/Icons/Patient/email.png',
+              icon: ImageAssets.email,
               heightIcon: 14.21,
               widthIcon: 16,
               textColor: Color(0xFF888A8E),
@@ -141,7 +141,7 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
             CustomFormField(
               label: "Date of Birth",
               hint: "mm/dd/yyyy",
-              icon: 'assets/Icons/Patient/data.png',
+              icon: ImageAssets.date,
               keyboardType: TextInputType.datetime,
               widthIcon: 14,
               heightIcon: 17.11,
