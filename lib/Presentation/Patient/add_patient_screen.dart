@@ -1,15 +1,14 @@
 import 'package:adixion/Core/helper/image_assets.dart';
 import 'package:adixion/Presentation/Patient/add_patient_screen_vitls.dart';
-import 'package:adixion/Presentation/Patient/widgets/custom_button.dart';
+import 'package:adixion/Core/widgets/custom_button.dart';
 import 'package:adixion/Presentation/Patient/widgets/custom_gender_selection.dart';
 import 'package:adixion/Presentation/Patient/widgets/custom_header_widgets.dart';
-import 'package:adixion/Presentation/Patient/widgets/custom_section_title.dart';
+import 'package:adixion/Core/widgets/custom_section_title.dart';
 import 'package:adixion/Presentation/Patient/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 class AddPatientScreen extends StatefulWidget {
   const AddPatientScreen({super.key});
-  
 
   @override
   State<AddPatientScreen> createState() => _AddPatientScreenState();
@@ -25,7 +24,6 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
   final TextEditingController _phoneController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _dobController = TextEditingController();
-
 
   @override
   void dispose() {
@@ -185,7 +183,8 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
                 }
               },
               text: 'Continue',
-              icon: Icons.arrow_forward,
+              icon: ImageAssets.arrowForward,
+              buttonColor: Color(0xFF8D34B0),
             ),
 
             const SizedBox(height: 30),
