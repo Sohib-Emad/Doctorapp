@@ -3,7 +3,7 @@ import 'package:adixion/Core/theme/color_app.dart';
 import 'package:adixion/Core/widgets/custom_button.dart';
 import 'package:adixion/Presentation/Prescription/data/data_source/medicine_database.dart';
 import 'package:adixion/Presentation/Prescription/data/models/medicine_model.dart';
-import 'package:adixion/Presentation/Prescription/widgets/custom_hader_preview.dart';
+import 'package:adixion/Presentation/Prescription/widgets/custom_header_preview.dart';
 import 'package:adixion/Presentation/Prescription/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
