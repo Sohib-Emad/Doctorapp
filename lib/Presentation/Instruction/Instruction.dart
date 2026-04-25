@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class Instruction extends StatefulWidget {
@@ -11,6 +10,6 @@ class Instruction extends StatefulWidget {
 class _InstructionState extends State<Instruction> {
   @override
   Widget build(BuildContext context) {
-    return const  Scaffold();
+    return const Placeholder();
   }
 }
