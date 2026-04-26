@@ -1,6 +1,6 @@
-import 'package:adixion/Core/Bloc/Login_bloc.dart';
-import 'package:adixion/Core/Controller.dart/themecontroller.dart';
-import 'package:adixion/Presentation/HomeScreen/DoctorHomeSC.dart';
+import 'package:doctor/Core/Bloc/Login_bloc.dart';
+import 'package:doctor/Core/Controller.dart/themecontroller.dart';
+import 'package:doctor/Presentation/HomeScreen/doctor_home_sc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
@@ -90,9 +90,9 @@ class _LoginscState extends State<Loginsc> {
                           /// Google + Facebook Buttons
                           Row(
                             children: [
-                              Expanded(child: socialButton("Google", "assets/Icons/login/google.png")),
+                              Expanded(child: socialButton("Google", "assets/images/Icons/login/google.png")),
                               SizedBox(width: 10),
-                              Expanded(child: socialButton("Facebook", "assets/Icons/login/facebook.png")),
+                              Expanded(child: socialButton("Facebook", "assets/images/Icons/login/facebook.png")),
                             ],
                           ),
 
