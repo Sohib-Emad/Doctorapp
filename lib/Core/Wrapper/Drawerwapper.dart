@@ -1,11 +1,11 @@
-import 'package:doctor/core/controller/drawercontroller.dart';
+import 'package:doctor/Core/Controller.dart/drawercontroller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class DrawerWrapper extends StatelessWidget {
   final Widget child;
 
-  DrawerWrapper({super.key, required this.child});
+  DrawerWrapper({required this.child});
 
   final controller = Get.put(DrawerControllerX());
 

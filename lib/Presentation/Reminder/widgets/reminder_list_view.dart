@@ -1,5 +1,5 @@
 
-import 'package:doctor/core/Theme/image_assets.dart';
+import 'package:doctor/Core/helper/image_assets.dart';
 import 'package:doctor/Presentation/Reminder/reminder_notes.dart';
 import 'package:doctor/Presentation/Reminder/reminder_pay.dart';
 import 'package:doctor/Presentation/Reminder/widgets/action_button.dart';

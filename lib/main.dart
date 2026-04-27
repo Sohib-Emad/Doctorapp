@@ -1,5 +1,5 @@
+import 'package:doctor/Core/Controller.dart/themecontroller.dart';
 import 'package:doctor/Presentation/Splash/SplashScreen.dart';
-import 'package:doctor/core/controller/themecontroller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,6 +1,6 @@
  
 import 'package:doctor/core/Theme/color_app.dart';
-import 'package:doctor/core/Theme/image_assets.dart';
+import 'package:doctor/Core/helper/image_assets.dart';
 import 'package:doctor/Presentation/Reminder/widgets/custom_header_reminder.dart';
 import 'package:doctor/Presentation/Reminder/widgets/date_reminder_picker.dart';
 import 'package:doctor/widgets/Add_patient/custom_section_title.dart';

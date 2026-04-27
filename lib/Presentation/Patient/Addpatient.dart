@@ -1,4 +1,4 @@
-import 'package:doctor/core/controller/addpatientcontroller.dart';
+import 'package:doctor/Core/Controller.dart/addpatientcontroller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
