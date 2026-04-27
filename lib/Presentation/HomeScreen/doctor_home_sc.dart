@@ -1,5 +1,5 @@
 
-import 'package:doctor/core/Bloc/Home_bloc.dart';
+import 'package:doctor/core/bloc/home_bloc.dart';
 import 'package:doctor/core/controller/themecontroller.dart';
 import 'package:doctor/Presentation/HomeScreen/widgets/bttom_navigation_bar.dart';
 import 'package:doctor/Presentation/HomeScreen/widgets/content.dart';

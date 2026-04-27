@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 class DrawerWrapper extends StatelessWidget {
   final Widget child;
 
-  DrawerWrapper({required this.child});
+  DrawerWrapper({super.key, required this.child});
 
   final controller = Get.put(DrawerControllerX());
 

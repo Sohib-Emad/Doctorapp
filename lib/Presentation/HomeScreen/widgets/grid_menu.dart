@@ -1,7 +1,7 @@
 
 import 'package:animate_do/animate_do.dart';
-import 'package:doctor/core/color_app.dart';
-import 'package:doctor/core/image_assets.dart';
+import 'package:doctor/core/Theme/color_app.dart';
+import 'package:doctor/core/Theme/image_assets.dart';
 import 'package:doctor/Presentation/Patient/Patientlist.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';

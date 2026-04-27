@@ -1,4 +1,4 @@
-import 'package:doctor/core/Bloc/Login_bloc.dart';
+import 'package:doctor/core/bloc/login_bloc.dart';
 import 'package:doctor/Presentation/HomeScreen/doctor_home_sc.dart';
 import 'package:doctor/core/controller/themecontroller.dart';
 import 'package:flutter/material.dart';
