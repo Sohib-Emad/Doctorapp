@@ -1,4 +1,4 @@
-import 'package:doctor/core/helper/image_assets.dart';
+import 'package:doctor/core/image_assets.dart';
 import 'package:flutter/material.dart';
 
 class CustomHeaderReminder extends StatelessWidget {

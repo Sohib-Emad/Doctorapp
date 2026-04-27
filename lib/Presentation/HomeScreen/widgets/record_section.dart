@@ -1,4 +1,4 @@
-import 'package:doctor/core/Theme/color_app.dart';
+import 'package:doctor/core/color_app.dart';
 import 'package:doctor/Presentation/HomeScreen/widgets/record_card.dart';
 import 'package:doctor/Presentation/MyTemplate/my_template.dart';
 import 'package:doctor/Presentation/Patient/add_patient_screen.dart';
