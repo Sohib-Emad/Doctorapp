@@ -1,5 +1,5 @@
-import 'package:doctor/core/color_app.dart';
-import 'package:doctor/core/image_assets.dart';
+import 'package:doctor/core/Theme/color_app.dart';
+import 'package:doctor/core/Theme/image_assets.dart';
 import 'package:flutter/material.dart';
 
 class PatineWidgetsTemplate extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:doctor/core/image_assets.dart';
+import 'package:doctor/core/Theme/image_assets.dart';
 import 'package:flutter/material.dart';
 
 class CustomHaderPreview extends StatelessWidget {
