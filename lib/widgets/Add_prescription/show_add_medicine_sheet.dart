@@ -23,6 +23,7 @@ Future<void> showAddMedicineSheet(
   String? instruction,
   String? textButtom,
   String? iconButtom,
+  Widget? customButtom,
   bool showMedicineFields = true,
 }) {
   return showModalBottomSheet(
@@ -37,6 +38,7 @@ Future<void> showAddMedicineSheet(
       qty: qty,
       lableFrequency: lableFrequency,
       frequency: frequency,
+      customButtom: customButtom,
       lableRoute: lableRoute,
       route: route,
       lableNoofDay: lableNoofDay,
@@ -67,6 +69,7 @@ class AddMedicineSheet extends StatefulWidget {
   final String? textButtom;
   final String? iconButtom;
   final bool showMedicineFields;
+  final Widget? customButtom;
 
   const AddMedicineSheet({
     super.key,
@@ -80,6 +83,7 @@ class AddMedicineSheet extends StatefulWidget {
     this.lableRoute,
     this.route,
     this.lableNoofDay,
+    this.customButtom,
     this.noofDay,
     this.lableinstruction,
     this.instruction,
@@ -140,9 +144,9 @@ class _AddMedicineSheetState extends State<AddMedicineSheet> {
   @override
   Widget build(BuildContext context) {
     return DraggableScrollableSheet(
-      initialChildSize: 0.85,
+      initialChildSize: 0.50,
       minChildSize: 0.4,
-      maxChildSize: 0.95,
+      maxChildSize: 0.90,
       expand: false,
       builder: (context, scrollController) {
         return Padding(
@@ -150,7 +154,7 @@ class _AddMedicineSheetState extends State<AddMedicineSheet> {
             bottom: MediaQuery.of(context).viewInsets.bottom,
           ),
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.vertical(top: Radius.circular(40)),
@@ -196,8 +200,7 @@ class _AddMedicineSheetState extends State<AddMedicineSheet> {
                   ],
                 ),
 
-                const SizedBox(height: 16),
-
+                // const SizedBox(height: 16),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -253,48 +256,56 @@ class _AddMedicineSheetState extends State<AddMedicineSheet> {
 
                 const SizedBox(height: 15),
 
-                // Save and Add + Choose Template
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Expanded(
-                      child: CustomButton(
-                        height: 60,
-                        width: 150,
-                        onPressed: () {},
-                        text: 'Save and Add',
-                        textStyle: TextStyle(
-                          fontSize: 12,
-                          color: ColorApp.textColor,
-                        ),
-                        border: Border.all(color: ColorApp.textColor, width: 1),
-                        buttonColor: ColorApp.scaffoldColor,
-                        assetIcon: ImageAssets.drft,
-                      ),
+                      child:
+                          widget.customButtom ??
+                          CustomButton(
+                            height: 60,
+                            width: 150,
+                            onPressed: () {},
+                            text: 'Save and Add',
+                            textStyle: TextStyle(
+                              fontSize: 12,
+                              color: ColorApp.textColor,
+                            ),
+                            border: Border.all(
+                              color: ColorApp.textColor,
+                              width: 1,
+                            ),
+                            buttonColor: ColorApp.scaffoldColor,
+                            assetIcon: ImageAssets.drft,
+                          ),
                     ),
                     const SizedBox(width: 10),
                     Expanded(
-                      child: CustomButton(
-                        height: 60,
-                        width: 150,
+                      child:
+                          widget.customButtom ??
+                          CustomButton(
+                            height: 60,
+                            width: 150,
 
-                        onPressed: () {},
-                        text: 'Choose Template',
-                        assetIcon: ImageAssets.drft,
-                        textStyle: TextStyle(
-                          fontSize: 12,
-                          color: ColorApp.textColor,
-                        ),
-                        border: Border.all(color: ColorApp.textColor, width: 1),
-                        buttonColor: ColorApp.scaffoldColor,
-                      ),
+                            onPressed: () {},
+                            text: 'Choose Template',
+                            assetIcon: ImageAssets.drft,
+                            textStyle: TextStyle(
+                              fontSize: 12,
+                              color: ColorApp.textColor,
+                            ),
+                            border: Border.all(
+                              color: ColorApp.textColor,
+                              width: 1,
+                            ),
+                            buttonColor: ColorApp.scaffoldColor,
+                          ),
                     ),
                   ],
                 ),
 
                 const SizedBox(height: 20),
 
-                // Frequency + Route/Form - بتظهر بس لو showMedicineFields
                 if (widget.showMedicineFields) ...[
                   Row(
                     children: [

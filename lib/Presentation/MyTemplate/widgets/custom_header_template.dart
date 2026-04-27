@@ -1,5 +1,6 @@
 import 'package:doctor/Core/Theme/color_app.dart';
 import 'package:doctor/Core/helper/image_assets.dart';
+import 'package:doctor/Presentation/MyTemplate/widgets/consent_template.dart';
 import 'package:doctor/Presentation/MyTemplate/widgets/lab_template.dart';
 import 'package:doctor/Presentation/MyTemplate/widgets/medicine_template.dart';
 import 'package:doctor/widgets/Add_patient/custom_button.dart';
@@ -39,7 +40,7 @@ class _CustomHeaderTemplateState extends State<CustomHeaderTemplate> {
       case 1:
         return const LabTemplate();
       case 2:
-        return const SizedBox();
+        return const ConsentTemplate();
       default:
         return const SizedBox();
     }
@@ -95,7 +96,7 @@ class _CustomHeaderTemplateState extends State<CustomHeaderTemplate> {
                               onTap: () {
                                 if (_selectedIndex == 0) {
                                   showAddMedicineSheet(context);
-                                } else {
+                                } else if (_selectedIndex == 1) {
                                   showAddMedicineSheet(
                                     context,
                                     title: 'Add Lab Test',
@@ -103,6 +104,18 @@ class _CustomHeaderTemplateState extends State<CustomHeaderTemplate> {
                                     name: 'Lab Test',
                                     textButtom: 'Add lab Test',
                                     iconButtom: ImageAssets.lab,
+                                    showMedicineFields: false,
+                                  );
+                                } else if (_selectedIndex == 2) {
+                                  showAddMedicineSheet(
+                                    context,
+                                    title: 'Add Consent',
+                                    nameOf: 'Consent Title',
+                                    
+                                    name: ' Consent',
+                                    textButtom: 'Add lab Test',
+                                    iconButtom: ImageAssets.lab,
+                                    customButtom: SizedBox.shrink(),
                                     showMedicineFields: false,
                                   );
                                 }
