@@ -1,6 +1,6 @@
 
-import 'package:doctor/Core/Theme/color_app.dart';
-import 'package:doctor/Core/helper/image_assets.dart';
+import 'package:doctor/core/Theme/color_app.dart';
+import 'package:doctor/core/helper/image_assets.dart';
 import 'package:doctor/Presentation/Reminder/widgets/custom_header_reminder.dart';
 import 'package:doctor/Presentation/Reminder/widgets/reminder_list_view.dart';
 import 'package:flutter/material.dart';

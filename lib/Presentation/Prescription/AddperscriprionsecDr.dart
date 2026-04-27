@@ -1,5 +1,5 @@
-import 'package:doctor/Core/Theme/color_app.dart';
-import 'package:doctor/Core/helper/image_assets.dart';
+import 'package:doctor/core/Theme/color_app.dart';
+import 'package:doctor/core/helper/image_assets.dart';
 import 'package:doctor/Data/Data_source/Medicine_datasource.dart';
 import 'package:doctor/Data/model/medicine_model.dart';
 import 'package:doctor/Presentation/Prescription/AddprescriptionthiDr.dart';
