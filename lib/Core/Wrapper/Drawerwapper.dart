@@ -1,4 +1,4 @@
-import 'package:doctor/core/Controller.dart/drawercontroller.dart';
+import 'package:doctor/core/controller/drawercontroller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
