@@ -1,4 +1,4 @@
-import 'package:doctor/core/Controller.dart/templating.dart';
+import 'package:doctor/core/controller/templating.dart';
 import 'package:get/get.dart';
 
 class TemplateController extends GetxController {
