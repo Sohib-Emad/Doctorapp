@@ -1,5 +1,5 @@
 import 'package:doctor/core/Theme/color_app.dart';
-import 'package:doctor/core/Theme/image_assets.dart';
+import 'package:doctor/Core/helper/image_assets.dart';
 import 'package:doctor/Presentation/MyTemplate/widgets/consent_template.dart';
 import 'package:doctor/Presentation/MyTemplate/widgets/lab_template.dart';
 import 'package:doctor/Presentation/MyTemplate/widgets/medicine_template.dart';
