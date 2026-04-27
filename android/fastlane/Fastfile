@@ -13,7 +13,8 @@ platform :android do
       groups: "tester",
       release_notes: "CI build from GitHub Actions",
       android_artifact_type: "APK",
-      android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk"
+      android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
+      debuge: true,
     )
   end
 end
