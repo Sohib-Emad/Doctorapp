@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 
 class PatineWidgetsTemplate extends StatelessWidget {
   final String name;
-  final String patientId;
-  final int age;
   final VoidCallback? onDelete;
   final VoidCallback? onEdit;
   final VoidCallback? onView;
@@ -13,8 +11,6 @@ class PatineWidgetsTemplate extends StatelessWidget {
   const PatineWidgetsTemplate({
     super.key,
     this.name = 'Rishabh Singh',
-    this.patientId = 'PT-001',
-    this.age = 28,
     this.onDelete,
     this.onEdit,
     this.onView,
